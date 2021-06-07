@@ -1,0 +1,214 @@
+/*GENERAL*/
+*{
+    margin:0px 0px;
+    padding: 0px 0px;
+}
+
+.container-lg{
+    margin:0px 0px;
+    padding: 0px 0px;
+}
+#planche{
+    margin:0px 0px;
+    padding: 0px 0px;
+}
+body{
+    background-image: url('images/bg.png');
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: 'Secular One', sans-serif;
+    margin:0px 0px;
+    padding: 0px 0px;
+}
+
+h1{
+    color:#fff;
+}
+
+.row{
+    margin: auto;
+    width: 100%;
+}
+
+#menuBurger{
+    float:left;
+    width:940px;
+}
+
+/*HEADER et MENU*/
+
+header h1{
+   height: 1em;
+    width:auto;
+    color:#f16026;
+    text-shadow: 2px 2px 2px #f5cb12;
+    text-transform: uppercase;
+}
+
+header span{
+    padding: 2px 2px;
+    color:#f5cb12;
+    text-shadow: none;
+
+}
+
+
+
+header span{
+    margin:10px 10px;
+}
+.nav{
+    border:none;
+}
+.nav .nav-link{
+    text-transform: uppercase;
+    text-align: center;
+    margin:0px 20px;
+    padding:0 0;
+    font-size:  21px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    color: #fff;
+}
+.active{
+    color: #f16026 !important;
+}
+
+#menu{
+    background-image: url('images/bg.png');
+    position: sticky;
+    top:0em;
+    z-index: 100;
+    width: 100%;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+  /*  background:rgb(36, 28, 28);
+    padding-bottom: 1.5em;*/
+}
+.nav .nav-item{
+    margin-top: 40px;
+    height:32px;
+}
+.nav .nav-item .nav-link{
+    padding:5px 20px;
+}
+.nav-link:hover{
+    padding:5px 20px;
+
+    background: #fff;
+    border-radius: 3px;
+}
+
+.nav .nav-item .active{
+    background: #fff;
+    border-radius: 3px;
+}
+
+.nav .nav-link:hover{
+    color:#f16026 !important;
+}
+
+/* les cartes */
+.tab{
+    margin:0px 0px;
+    padding:0px 0px;
+}
+.card{
+    background: rgba(0,0,0,0);
+    margin:0px 0px;
+    padding:0px 0px;
+    z-index:1;
+}
+.vignette{ 
+    display:block;
+    list-style: none;
+    background: #fff;
+    border-radius: 3px;
+    margin:10px 10px;
+    padding:10px 10px;
+}
+.card-header, .card-footer{
+    background: rgba(0,0,0,0);
+    border:none;
+}
+.card .funImg{
+    padding:0px 0px;
+    background: #f5cb12;
+    margin:10px 0px 0px 0px;
+    z-index:1;
+}
+
+.card-footer{
+    margin:2px 2px;
+    text-align: center;width: auto;
+}
+
+.btn-order{
+    width: 100%;
+    background: #f16026;
+    color:#fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    margin: 8px 8px;
+    padding: 5px auto;
+    font-size: 1.3em;
+}
+
+.btn-order:hover{
+    background: #fff;
+    color:#f16026;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    border: 2px solid #f16026;
+    margin: 4px 4px;
+
+}
+
+.ticket-title{
+    color:#f16026;
+    text-transform: uppercase;
+    width: auto;
+    font-size:1.5em;
+    font-weight: bold;
+    margin:15px 8px 15px 8px;
+    z-index:1;
+    text-shadow: 1px 1px 1px  rgb(80, 77, 77);
+}
+
+.ticket-text{
+    position: relative;
+    text-transform: uppercase;
+    color:#000;
+    font-size: 0.8em;
+    margin:15px 8px 15px 8px;
+    z-index:1;
+
+}
+
+.price{ 
+    position:absolute;
+    top:30px;
+    right: -5px;
+    background:#2ebe93;
+    color:#fff;
+    text-shadow: 1px 1px 1px #000;
+    margin:2px 5px;
+    font-size: 1.2em;
+    width:100px;
+    padding: 5px 5px 5px 15px ;
+    z-index:2;
+   
+}
+
+.circle{
+    border-radius: 8px;
+    background: #20745a;
+    color: #2ebe93;
+    position: absolute;
+    top:20px;
+    right: -5px;
+    margin:2px 5px;
+    font-size: 24px;
+    width:100px;
+    padding: 5px 5px 5px 15px ;
+    z-index:-1;
+}

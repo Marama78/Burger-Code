@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Burger code</title>
+        <meta charset='utf-8'/>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+        
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles.css">
+
+    
+    
+    
+    
+    
+    
+    
+    <script>
+        function ScrollToUp(target){
+            $(".tab-pane").fadeOut(2);
+           window.scrollTo(0,0) ;
+           $(target).fadeIn(1500);
+        }
+    </script>
+    
+    
+    
+    
+    
+    
+    </head>
+
+
+
+
+
+
+
+
+
+
+    <body>
+
+
+
+
+<div id="planche">
+
+
+    <div id="menu">
+
+        <header class="text-center">
+            <h1 > <span class="bi bi-shop"></span>Burger Code<span class="bi bi-shop"></span></h1>
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+       <!--  <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid col align-self-auto">
+                <button class="navbar-toggler align-baseline" type="button" data-bs-toggle="collapse" data-bs-target="#menuBurger">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class='collapse navbar-collapse' id='menuBurger'>
+
+                <ul class="navbar-nav nav" >
+                    <li class="nav-item">
+                        <a href="#1" class="nav-link fade show active align-items-baseline">Menu</a>
+                    </li>
+                    <li class="nav-item">                        
+                        <a href="#1" class="nav-link fade show" >Snacks</a>
+                    </li>
+                    <li class="nav-item">                        
+                        <a href="#1" class="nav-link  fade show">Salades</a>
+                    </li>
+                    <li class="nav-item">                        
+                        <a href="#1" class="nav-link fade show">Boissons</a>
+                    </li>
+                    <li class="nav-item">                        
+                        <a href="#1" class="nav-link fade show">Desserts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+
+
+        <div class="container-md" >
+           
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <button onclick="ScrollToUp('#panel1')" class="nav-link active" data-bs-toggle="tab" data-bs-target="#panel1"  role="tab"> Menu</button>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <button onclick="ScrollToUp('#panel2')"  class="nav-link" data-bs-toggle="tab" data-bs-target="#panel2"   role="tab"  > Burger</button>
+                    </li>
+                
+                    <li class="nav-item">
+                        <button onclick="ScrollToUp('#panel3')"  class="nav-link" data-bs-toggle="tab" data-bs-target="#panel3"    role="tab" > Salades</button>
+                    </li>
+               
+                    <li  class="nav-item">
+                        <button  onclick="ScrollToUp('#panel4')" class="nav-link"  data-bs-toggle="tab" data-bs-target="#panel4"     role="tab"> Desserts</button>
+                    </li>
+                
+                    <li   class="nav-item">
+                        <button  onclick="ScrollToUp('#panel5')" class="nav-link"   data-bs-toggle="tab" data-bs-target="#panel5"    role="tab"> Boisssons</button>
+                    </li>
+                            
+                </ul>
+        </div>
+    </div>
+
+
+    <div class="tab-content">
+        <!-- FIRST PAGE -->
+        <div class="tab-pane  show active"   id="panel1" role="tabpanel">
+            <div class="container-md " data-bs-offset="0" >
+                <div class="row">
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+                                  
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+
+        <!-- SECOND PAGE -->
+        <div class="tab-pane " id="panel2"  role="tabpanel">
+            <div class="container-md ">
+                <div class="row">
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/sa1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>COCORICO</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- THIRD PAGE -->
+        <div class="tab-pane " id="panel3"  role="tabpanel">
+            <div class="container-md ">
+                <div class="row">
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/b1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>COCORICO 3</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-12 col-lg-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 8.30€</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Menu Classic</h1>
+                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window">
+                                                <a>Commander</a>
+                                            </span>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- FOURTH PAGE -->
+        <div class="tab-pane " id="panel4" role="tabpanel">
+            <h1>test</h1>
+        </div>
+        
+        <!-- FIFTH PAGE -->
+        <div class="tab-pane " id="panel5" role="tabpanel">
+            <h1 >Almost before we knew it, we had left the ground.</h1>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- end of tb-->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+           
+</body>
+</html>
