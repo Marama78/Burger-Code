@@ -37,10 +37,10 @@ h1{
 
 /*HEADER et MENU*/
 
-header h1{
+#Title{
    height: 1em;
     width:auto;
-    color:#f16026;
+    color:#f16026  !important;
     text-shadow: 2px 2px 2px #f5cb12;
     text-transform: uppercase;
 }
@@ -60,50 +60,44 @@ header span{
 .nav{
     border:none;
 }
-.nav .nav-link{
-    text-transform: uppercase;
-    text-align: center;
-    margin:0px 20px;
-    padding:0 0;
-    font-size:  21px;
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
-    color: #fff;
-}
-.active{
-    color: #f16026 !important;
-}
+/*#boutonColapse .nav .navbar-nav .nav-item .nav-link{*/
+    .nav-link, .nav-item{
+        float:left;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        background: rgba(0,0,0,0);
+        border: none;
+        color: #fff;
+    }
 
-#menu{
+
+        
+
+#planche, .navbar{
+
     background-image: url('images/bg.png');
     position: sticky;
     top:0em;
     z-index: 100;
     width: 100%;
-    padding-bottom: 1.5em;
-    padding-top: 1.5em;
   /*  background:rgb(36, 28, 28);
     padding-bottom: 1.5em;*/
 }
-.nav .nav-item{
-    margin-top: 40px;
-    height:32px;
-}
-.nav .nav-item .nav-link{
+.nav-link{
     padding:5px 20px;
 }
+.nav-item:hover{
+    background: #fff;
+    border-radius: 3px;
+}
+.nav-item .active{
+    background: #f16026 !important;
+    color: #fff;;
+}
+
 .nav-link:hover{
-    padding:5px 20px;
-
-    background: #fff;
-    border-radius: 3px;
-}
-
-.nav .nav-item .active{
-    background: #fff;
-    border-radius: 3px;
-}
-
-.nav .nav-link:hover{
     color:#f16026 !important;
 }
 

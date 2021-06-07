@@ -31,6 +31,7 @@
            window.scrollTo(0,0) ;
            $(target).fadeIn(1500);
         }
+
     </script>
     
     
@@ -52,82 +53,60 @@
     <body>
 
 
-
+ <header class="text-center">
+        <h1 id="Title"> 
+            <span class="bi bi-shop"></span id="Title">Burger Code<span class="bi bi-shop"></span>
+        </h1>
+    </header>
 
 <div id="planche">
-
-
-    <div id="menu">
-
-        <header class="text-center">
-            <h1 > <span class="bi bi-shop"></span>Burger Code<span class="bi bi-shop"></span></h1>
-        </header>
-
-
-
-
-
-
-
-
-
-
-
-       <!--  <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid col align-self-auto">
-                <button class="navbar-toggler align-baseline" type="button" data-bs-toggle="collapse" data-bs-target="#menuBurger">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid" id="Enseigne">
+            <div class="navbar-brand">
+                    <button id="toggleButton" class="navbar-toggler col-md" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
             </div>
-            <div class='collapse navbar-collapse' id='menuBurger'>
+ 
+        
 
-                <ul class="navbar-nav nav" >
-                    <li class="nav-item">
-                        <a href="#1" class="nav-link fade show active align-items-baseline">Menu</a>
-                    </li>
-                    <li class="nav-item">                        
-                        <a href="#1" class="nav-link fade show" >Snacks</a>
-                    </li>
-                    <li class="nav-item">                        
-                        <a href="#1" class="nav-link  fade show">Salades</a>
-                    </li>
-                    <li class="nav-item">                        
-                        <a href="#1" class="nav-link fade show">Boissons</a>
-                    </li>
-                    <li class="nav-item">                        
-                        <a href="#1" class="nav-link fade show">Desserts</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
+            <div class="collapse navbar-collapse" id = "collapseMenu">
+        
+                <div class="container-md" id="boutonColapse">
+                <a>
+                        <ul class="nav nav-tabs navbar-nav mr-auto"  role="tablist">
+                            <li class="nav-item">
+                                <button onclick="ScrollToUp('#panel1')" class="nav-link active" data-bs-toggle="tab" data-bs-target="#panel1"  role="tab"> Menu</button>
+                            </li>
 
+                            <li class="nav-item">
+                                <button onclick="ScrollToUp('#panel2')"  class="nav-link" data-bs-toggle="tab" data-bs-target="#panel2"   role="tab"  > Burger</button>
+                            </li>
 
-        <div class="container-md" >
-           
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <button onclick="ScrollToUp('#panel1')" class="nav-link active" data-bs-toggle="tab" data-bs-target="#panel1"  role="tab"> Menu</button>
-                    </li>
-                  
-                    <li class="nav-item">
-                        <button onclick="ScrollToUp('#panel2')"  class="nav-link" data-bs-toggle="tab" data-bs-target="#panel2"   role="tab"  > Burger</button>
-                    </li>
-                
-                    <li class="nav-item">
-                        <button onclick="ScrollToUp('#panel3')"  class="nav-link" data-bs-toggle="tab" data-bs-target="#panel3"    role="tab" > Salades</button>
-                    </li>
-               
-                    <li  class="nav-item">
-                        <button  onclick="ScrollToUp('#panel4')" class="nav-link"  data-bs-toggle="tab" data-bs-target="#panel4"     role="tab"> Desserts</button>
-                    </li>
-                
-                    <li   class="nav-item">
-                        <button  onclick="ScrollToUp('#panel5')" class="nav-link"   data-bs-toggle="tab" data-bs-target="#panel5"    role="tab"> Boisssons</button>
-                    </li>
+                            <li class="nav-item">
+                            <button onclick="ScrollToUp('#panel3')"  class="nav-link" data-bs-toggle="tab" data-bs-target="#panel3"    role="tab" > Salades</button>
+                            </li>  
+                                
+                            <li  class="nav-item">     
+                                <button  onclick="ScrollToUp('#panel4')" class="nav-link"  data-bs-toggle="tab" data-bs-target="#panel4"     role="tab"> Desserts</button>
+                            </li>
                             
-                </ul>
+                            <li class="nav-item">   
+                                <button  onclick="ScrollToUp('#panel5')" class="nav-link"   data-bs-toggle="tab" data-bs-target="#panel5"    role="tab"> Boissson
+                                </button>
+                            </li>
+                        </ul>
+
+                    </a>
+                </div>
+            </div>
+
+        </div>
+</div>
+
         </div>
     </div>
+      
 
 
     <div class="tab-content">
