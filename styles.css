@@ -1,4 +1,5 @@
 /*GENERAL*/
+
 *{
     margin:0px 0px;
     padding: 0px 0px;
@@ -8,10 +9,12 @@
     margin:0px 0px;
     padding: 0px 0px;
 }
+
 #planche{
     margin:0px 0px;
     padding: 0px 0px;
 }
+
 body{
     background-image: url('images/bg.png');
     font-weight: bold;
@@ -57,26 +60,56 @@ header span{
 header span{
     margin:10px 10px;
 }
+
 .nav{
     border:none;
 }
+
 /*#boutonColapse .nav .navbar-nav .nav-item .nav-link{*/
-    .nav-link, .nav-item{
-        float:left;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        text-shadow: 2px 2px 2px rgb(0, 0, 0);
-        background: rgba(0,0,0,0);
-        border: none;
-        color: #fff;
-    }
+.nav-link{
+    float:left;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border: none;
+    color: #fff;
+    padding:5px 20px;
+    border-radius: 8px;
+
+}
+
+.nav-item{
+    float:left;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
+    
+.nav-item:hover{
+    background: #fff;
+    border-radius: 3px;
+}
+
+.nav-item .active{
+    color: #f16026 !important;
+    background: #fff !important;
+}
 
 
+.nav-link:hover{
+    background: #f16026 !important;
+    color:#fff !important;
+}
+
+  
         
 
 #planche, .navbar{
-
     background-image: url('images/bg.png');
     position: sticky;
     top:0em;
@@ -85,33 +118,40 @@ header span{
   /*  background:rgb(36, 28, 28);
     padding-bottom: 1.5em;*/
 }
-.nav-link{
-    padding:5px 20px;
-}
-.nav-item:hover{
-    background: #fff;
-    border-radius: 3px;
-}
-.nav-item .active{
-    background: #f16026 !important;
-    color: #fff;;
+
+.show{
+    color: #fff !important;
+
 }
 
-.nav-link:hover{
-    color:#f16026 !important;
+
+
+
+
+
+#menuSpy{
+    visibility: hidden;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #f16026 !important;
+    color:#fff !important;
+    padding-top:4px;
 }
+
+
 
 /* les cartes */
 .tab{
     margin:0px 0px;
     padding:0px 0px;
 }
+
 .card{
     background: rgba(0,0,0,0);
     margin:0px 0px;
     padding:0px 0px;
     z-index:1;
 }
+
 .vignette{ 
     display:block;
     list-style: none;
@@ -120,10 +160,12 @@ header span{
     margin:10px 10px;
     padding:10px 10px;
 }
+
 .card-header, .card-footer{
     background: rgba(0,0,0,0);
     border:none;
 }
+
 .card .funImg{
     padding:0px 0px;
     background: #f5cb12;
@@ -142,7 +184,7 @@ header span{
     color:#fff;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #000;
-    margin: 8px 8px;
+    margin: 8px 0px;
     padding: 5px auto;
     font-size: 1.3em;
 }
@@ -169,11 +211,12 @@ header span{
 }
 
 .ticket-text{
+  /*  visibility: hidden;*/
     position: relative;
     text-transform: uppercase;
     color:#000;
     font-size: 0.8em;
-    margin:15px 8px 15px 8px;
+    margin:0.5em 0em;
     z-index:1;
 
 }
@@ -205,4 +248,85 @@ header span{
     width:100px;
     padding: 5px 5px 5px 15px ;
     z-index:-1;
+}
+
+
+
+
+
+@media 
+(max-width:576px){
+    .col-sm-4 {
+        background: rgba(0,0,0,0);
+        margin:0px 0px;
+        padding:0px 0px;
+        z-index:1;
+        font-size: small;
+    }
+
+    .text-center{
+        height: 0px;
+        }
+    #Title{
+        visibility: hidden;
+    }
+
+    #menuSpy{
+        visibility:visible;
+    }
+
+    .nav-link{
+        width: 100%;
+    }
+}
+
+/* how to handle only the col-sm-4 */
+@media 
+(min-width: 576px)
+AND
+(max-width:768px){
+    .col-sm-6 {
+        background: rgba(0,0,0,0);
+        margin:0px 0px;
+        padding:0px 0px;
+        z-index:1;
+        font-size: small;
+    }
+
+
+    .reduceSize{
+        font-size: 0.5em;
+    }
+    .card-footer{
+        max-height: fit-content;
+        padding:0px 0px;
+    }
+
+   
+    .card-body{
+    margin:0px 0px;
+    padding:0px 0px;
+    }
+    .card-header{
+        padding:0px 0px;
+    }
+    .car{
+        height:30% !important;
+    }
+    .text-center{
+    height: 0px;
+    }   
+    #Title{
+        visibility: hidden;
+    }
+    /*.nav-link{
+        font-size:medium;
+    }*/
+   
+    #menuSpy{
+        visibility:visible;
+    }
+    .nav-link{
+        width: 100%;
+    }
 }
