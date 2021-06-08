@@ -34,7 +34,7 @@
 
     function ScrollToUp(){
     target=contentTabPanel[_index];
-       
+       $(".footPage").hide();
         $("#menuSpy").css({"width":"10"});   
        
         if(target!=oldButton){
@@ -48,6 +48,7 @@
             oldButton = target;
             console.log("ok boomer");
         };
+        $(".footPage").show(500);
 
 
         if(  $(".navbar-collapse").hasClass("show"))
@@ -147,12 +148,11 @@
 
 
     <div class="tab-content">
-
+ 
         <!-- FIRST PAGE -->
         <div class="tab-pane  show active"   id="panel1" role="tabpanel">
             <div class="container-md " data-bs-offset="0" >
                 <div class="row myOnglet">
-
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
@@ -182,7 +182,7 @@
                         </div>           
                     </div>
 
-                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                    <div class="card col-sm-6 col-md-6 col-xl-4 ">
                         <div class="vignette">
                             <div class="card-header">
                                 <img class="card-img funImg" src="images/m2.png" alt="Menu Bacon" srcset=""> 
@@ -277,22 +277,21 @@
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
                                     <span class="price"> 5.30€</span>
-                            
                                 </div>
                         
                             </div>
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>Menu Fish</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, poisson + frites + boisson</p>
+                                <h1 class='ticket-title'>Menu Fish</h1>
+                                <p class='ticket-text'>sandwich: burger, salade, poisson + frites + boisson</p>
                             </div>
 
                             <div class="card-footer">
-                                        <button class="btn btn-order" type='button'>
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
+                                <button class="btn btn-order" type='button'>
+                                    <span class="bi bi-shop-window iconToHide"></span>
+                                    <a>Commander</a>
+                                </button>
 
                             </div>
                         </div>           
@@ -333,9 +332,6 @@
                         
                     </div>
                                   
-               
-
-                    
                 </div>
 
             </div>
@@ -346,7 +342,7 @@
         <div class="tab-pane " id="panel2"  role="tabpanel">
             <div class="container-md ">
                 <div class="row  myOnglet">
-
+                   
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
@@ -362,7 +358,7 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>COCORICO</h1>
+                                    <h1 class='ticket-title'>COCORICO goggogogogooggogoogogoogoog</h1>
                                     <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
                             </div>
 
@@ -1003,7 +999,50 @@
     //to do if click
     $(".nav-link").click(ScrollToUp());
 
-    $(".card-body").hover(function(){
+    //todo if hover on button
+    $(".btn-order").hover(
+        function(){
+           $(this).parent(".card-footer").parent(".vignette").css({
+                "background":"linear-gradient(24deg, #f5cb12 0%, #ffd2e1 25%, #fff 50%,#ffd2e1 75%,#f5cb12 100%)",
+                "background-size":"600% 600%",
+                "animation": "AnimeGradient 30s ease infinite",
+            });
+            $(this).parent(".card-footer").parent(".vignette").children(".card-header").children("img").css({
+                "background":"linear-gradient(0deg, #f16026 0%,   #fff 25% ,#f5cb12 50%, #fff 75%, #f16026 100%)",
+                "background-size":"600% 600%",
+                "animation": "AnimeGradient 25s ease infinite",
+            });
+
+          
+
+            $(this).click(function(){
+                $(this).parent(".card-footer").parent(".vignette").css({
+                    "background":"linear-gradient(24deg, #f5cb12 0%, #d512ee 25%, #f16026 50%,#d512ee 75%,#f5cb12 100%)",
+                    "background-size":"600% 600%",
+                    "animation": "AnimeGradient 2s ease 2",
+                });
+                $(this).parent(".card-footer").parent(".vignette").children(".card-header").children("img").css({
+                    "background":"linear-gradient(20deg, #f16026 0%,   #fff 25% ,#f5cb12 50%, #fff 75%, #f16026 100%)",
+                    "background-size":"600% 600%",
+                    "animation": "AnimeGradient 2s ease 2",
+                });
+            })
+
+        },
+        function(){
+            $(this).parent(".card-footer").parent(".vignette").css({"background":"#fff"});
+
+            $(this).parent(".card-footer").parent(".vignette").children(".card-header").children("img").css({
+                "background":"#f5cb12",
+                "background-size":"",
+                "animation": "",
+            });
+
+        }
+    )
+    
+
+  /* $(".card-body").hover(function(){
         $(".card-body").click(function(){
 
             result = $("p").hasClass(".displayTheIngredients");
@@ -1024,7 +1063,7 @@
         }
         ),
         function(){};
-    });
+    });*/
        
 </script>
 
@@ -1057,9 +1096,17 @@
 
 
 
-
+<footer class="footPage h-50 bg-danger text-center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    copyright 2021 - anahoa studio
+</footer>
 
        
            
 </body>
+
 </html>

@@ -28,10 +28,10 @@ h1{
     color:#fff;
 }
 
-.row{
-    margin: auto;
-    width: 100%;
-}
+/*.row{
+    /*margin: auto;*/
+  /*  width: 100%;*/
+/*}*/
 
 #menuBurger{
     float:left;
@@ -147,8 +147,9 @@ header span{
 
 .card{
     background: rgba(0,0,0,0);
-    margin:0px 0px;
-    padding:0px 0px;
+    margin: 0px 0px ;
+    
+    padding:10px 10px;
     z-index:1;
 }
 
@@ -158,7 +159,10 @@ header span{
     background: #fff;
     border-radius: 3px;
     margin:10px 10px;
-    padding:10px 10px;
+    padding:0px 0px 3em 0px;
+    height:100%;
+
+    /*animation: AnimationName 9s ease infinite;*/
 }
 
 .card-header, .card-footer{
@@ -166,27 +170,34 @@ header span{
     border:none;
 }
 
+
 .card .funImg{
     padding:0px 0px;
     background: #f5cb12;
     margin:10px 0px 0px 0px;
     z-index:1;
+
 }
 
 .card-footer{
+    position:absolute;
+    bottom: 1.2em;
     margin:2px 2px;
-    text-align: center;width: auto;
+    padding:10px 10px;
+    text-align: center;
+    width: 90%;
 }
 
 .btn-order{
+    border:none;
     width: 100%;
     background: #f16026;
     color:#fff;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #000;
     margin: 8px 0px;
-    padding: 5px auto;
     font-size: 1.3em;
+    border-radius: 9px;
 }
 
 .btn-order:hover{
@@ -203,7 +214,7 @@ header span{
     color:#f16026;
     text-transform: uppercase;
     width: auto;
-    font-size:1.5em;
+  /*  font-size:1.5em;*/
     font-weight: bold;
     margin:15px 8px 15px 8px;
     z-index:1;
@@ -215,7 +226,6 @@ header span{
     position: relative;
     text-transform: uppercase;
     color:#000;
-    font-size: 0.8em;
     margin:0.5em 0em;
     z-index:1;
 
@@ -330,3 +340,12 @@ AND
         width: 100%;
     }
 }
+
+
+@keyframes AnimeGradient {
+    0%{background-position: 0% 50%}
+    25%{background-position:50% 100%}
+    50%{background-position:100% 50%}
+    75%{background-position:50% 0%}
+}
+
