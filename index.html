@@ -21,8 +21,8 @@
            
     <script>
         var oldButton;
-        var contentMenu = ["menu", "burger", "salades","desserts","boisson"];
-        var contentTabPanel = ["#panel1","#panel2","#panel3","#panel4","#panel5",]
+        var contentMenu = ["menu", "burger", "salades","desserts","boissons","accompagnements"];
+        var contentTabPanel = ["#panel1","#panel2","#panel3","#panel4","#panel5","#panel6"]
         var _index;
         var target;
 
@@ -130,7 +130,12 @@
                             </li>
                             
                             <li class="nav-item">   
-                                <button  onclick="ScrollToUp()" class="nav-link"   data-bs-toggle="tab" data-bs-target="#panel5"    role="tab"> Boissson
+                                <button  onclick="ScrollToUp()" class="nav-link"   data-bs-toggle="tab" data-bs-target="#panel5"    role="tab"> Boisssons
+                                </button>
+                            </li>
+
+                            <li class="nav-item">   
+                                <button  onclick="ScrollToUp()" class="nav-link"   data-bs-toggle="tab" data-bs-target="#panel6"    role="tab"> accompagnements
                                 </button>
                             </li>
 
@@ -160,7 +165,7 @@
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 5.30€</span>
+                                    <span class="price"> 1.450 XPF</span>
                             
                                 </div>
                         
@@ -189,7 +194,7 @@
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.80€</span>
+                                    <span class="price"> 1.740 XPF</span>
                             
                                 </div>
                         
@@ -218,7 +223,7 @@
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 9.50€</span>
+                                    <span class="price"> 1.850 XPF</span>
                             
                                 </div>
                         
@@ -247,7 +252,7 @@
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.50€</span>
+                                    <span class="price"> 1.350 XPF</span>
                             
                                 </div>
                         
@@ -276,7 +281,7 @@
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 5.30€</span>
+                                    <span class="price"> 1.050 XPF</span>
                                 </div>
                         
                             </div>
@@ -306,7 +311,7 @@
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 1.950 XPF</span>
                             
                                 </div>
                         
@@ -346,11 +351,11 @@
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
-                                <img class="card-img funImg" src="images/sa1.png" alt="..." srcset=""> 
+                                <img class="card-img funImg" src="images/b1.png" alt="burger classic" srcset=""> 
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 545 XPF</span>
                             
                                 </div>
                         
@@ -358,8 +363,8 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>COCORICO goggogogogooggogoogogoogoog</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                                    <h1 class='ticket-title'>Burger Classic</h1>
+                                    <p class='ticket-text'>viande, salade, tomate, cornichon</p>
                             </div>
 
                             <div class="card-footer">
@@ -375,11 +380,11 @@
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                <img class="card-img funImg" src="images/b2.png" alt="burger bacon" srcset=""> 
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 850 XPF</span>
                             
                                 </div>
                         
@@ -387,8 +392,8 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                                    <h1 class='ticket-title'>Burger bacon</h1>
+                                    <p class='ticket-text'>viande, fromage, tomate, bacon, salade</p>
                             </div>
 
                             <div class="card-footer">
@@ -404,11 +409,11 @@
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                <img class="card-img funImg" src="images/b3.png" alt="burger big" srcset=""> 
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 850 XPF</span>
                             
                                 </div>
                         
@@ -416,8 +421,8 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                                    <h1 class='ticket-title'>Burger Big</h1>
+                                    <p class='ticket-text'>viande, fromage, salade, cornichons</p>
                             </div>
 
                             <div class="card-footer">
@@ -433,11 +438,11 @@
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                <img class="card-img funImg" src="images/b4.png" alt="burger chicken" srcset=""> 
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 550 XPF</span>
                             
                                 </div>
                         
@@ -445,8 +450,8 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                                    <h1 class='ticket-title'>burger chicken</h1>
+                                    <p class='ticket-text'>poulet, salade, tomate</p>
                             </div>
 
                             <div class="card-footer">
@@ -462,11 +467,11 @@
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                <img class="card-img funImg" src="images/b5.png" alt="burger fish" srcset=""> 
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 450 XPF</span>
                             
                                 </div>
                         
@@ -474,8 +479,8 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                                    <h1 class='ticket-title'>Burger Fish</h1>
+                                    <p class='ticket-text'>poisson, mayonnaise, salade</p>
                             </div>
 
                             <div class="card-footer">
@@ -491,11 +496,11 @@
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                <img class="card-img funImg" src="images/b6.png" alt="double cheese" srcset=""> 
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 950 XPF</span>
                             
                                 </div>
                         
@@ -503,8 +508,8 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                                    <h1 class='ticket-title'>Double cheese</h1>
+                                    <p class='ticket-text'>vidande, fromage, bacon, salade tomates</p>
                             </div>
 
                             <div class="card-footer">
@@ -517,137 +522,23 @@
                         </div>           
                     </div>
 
-                    <div class="card col-sm-6 col-md-6 col-xl-4">
-                        <div class="vignette">
-                            <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
-                                
-                                <div class='align-self-end'>
-                                    <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
-                            
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="card-body">
-                                
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
-                            </div>
-
-                            <div class="card-footer">
-                                        <button class="btn btn-order" type='button'>
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
-
-                            </div>
-                        </div>           
-                    </div>
-
-                    <div class="card col-sm-6 col-md-6 col-xl-4">
-                        <div class="vignette">
-                            <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
-                                
-                                <div class='align-self-end'>
-                                    <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
-                            
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="card-body">
-                                
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
-                            </div>
-
-                            <div class="card-footer">
-                                        <button class="btn btn-order" type='button'>
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
-
-                            </div>
-                        </div>           
-                    </div>
-
-                    <div class="card col-sm-6 col-md-6 col-xl-4">
-                        <div class="vignette">
-                            <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
-                                
-                                <div class='align-self-end'>
-                                    <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
-                            
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="card-body">
-                                
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
-                            </div>
-
-                            <div class="card-footer">
-                                        <button class="btn btn-order" type='button'>
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
-
-                            </div>
-                        </div>           
-                    </div>
-
-                    <div class="card col-sm-6 col-md-6 col-xl-4">
-                        <div class="vignette">
-                            <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
-                                
-                                <div class='align-self-end'>
-                                    <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
-                            
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="card-body">
-                                
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
-                            </div>
-
-                            <div class="card-footer">
-                                        <button class="btn btn-order" type='button'>
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
-
-                            </div>
-                        </div>           
-                    </div>
+                 
                 </div>
             </div>
         </div>
 
-        <!-- THIRD PAGE -->
+        <!-- THIRD PAGE SALADES-->
         <div class="tab-pane " id="panel3"  role="tabpanel">
             <div class="container-md ">
                 <div class="row myOnglet">
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                <img class="card-img funImg" src="images/sa1.png" alt="salade caesar" srcset=""> 
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 1.250 XPF</span>
                             
                                 </div>
                         
@@ -655,8 +546,8 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                                    <h1 class='ticket-title'>salade caesar</h1>
+                                    <p class='ticket-text'>poulet, crème fraîche, salade, croutons de pains, fromage</p>
                             </div>
 
                             <div class="card-footer">
@@ -672,11 +563,11 @@
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                <img class="card-img funImg" src="images/sa2.png" alt="salade de poulet" srcset=""> 
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 1.050 XPF</span>
                             
                                 </div>
                         
@@ -684,8 +575,8 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                                    <h1 class='ticket-title'>Salade poulet</h1>
+                                    <p class='ticket-text'>poulet, tomate, salades, sauce blanche</p>
                             </div>
 
                             <div class="card-footer">
@@ -701,11 +592,11 @@
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                <img class="card-img funImg" src="images/sa3.png" alt="végétale" srcset=""> 
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 830 XPF</span>
                             
                                 </div>
                         
@@ -713,8 +604,8 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                                    <h1 class='ticket-title'>Salade Végétale</h1>
+                                    <p class='ticket-text'>salade, tomate, chou, concombre, maïs</p>
                             </div>
 
                             <div class="card-footer">
@@ -730,11 +621,11 @@
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                <img class="card-img funImg" src="images/sa4.png" alt="Chicken Green" srcset=""> 
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 850 XPF</span>
                             
                                 </div>
                         
@@ -742,8 +633,8 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                                    <h1 class='ticket-title'>Chicken green</h1>
+                                    <p class='ticket-text'>poulet, concombre, tomate, salade, maïs</p>
                             </div>
 
                             <div class="card-footer">
@@ -759,11 +650,11 @@
                     <div class="card col-sm-6 col-md-6 col-xl-4">
                         <div class="vignette">
                             <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
+                                <img class="card-img funImg" src="images/sa5.png" alt="Thon" srcset=""> 
                                 
                                 <div class='align-self-end'>
                                     <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
+                                    <span class="price"> 1.050 XPF</span>
                             
                                 </div>
                         
@@ -771,36 +662,8 @@
                         
                             <div class="card-body">
                                 
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
-                            </div>
-
-                            <div class="card-footer">
-                                        <button class="btn btn-order" type='button'>
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
-
-                            </div>
-                        </div>           
-                    </div>
-                    <div class="card col-sm-6 col-md-6 col-xl-4">
-                        <div class="vignette">
-                            <div class="card-header">
-                                <img class="card-img funImg" src="images/b1.png" alt="..." srcset=""> 
-                                
-                                <div class='align-self-end'>
-                                    <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
-                            
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="card-body">
-                                
-                                    <h1 class='ticket-title'>COCORICO 3</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
+                                    <h1 class='ticket-title'>Salade de thon</h1>
+                                    <p class='ticket-text'>thon, salade, concombre, maïs, chou, tomates</p>
                             </div>
 
                             <div class="card-footer">
@@ -813,168 +676,509 @@
                         </div>           
                     </div>
 
-                    <div class="card col-sm-6 col-md-6 col-xl-4">
-                        <div class="vignette">
-                            <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
-                                
-                                <div class='align-self-end'>
-                                    <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
-                            
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="card-body">
-                                
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
-                            </div>
-
-                            <div class="card-footer">
-                                        <button class="btn btn-order" type='button'>
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
-
-                            </div>
-                        </div>           
-                    </div>
-
-                    <div class="card col-sm-6 col-md-6 col-xl-4">
-                        <div class="vignette">
-                            <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
-                                
-                                <div class='align-self-end'>
-                                    <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
-                            
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="card-body">
-                                
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
-                            </div>
-
-                            <div class="card-footer">
-                                        <button class="btn btn-order" type='button'>
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
-
-                            </div>
-                        </div>           
-                    </div>
-
-                    <div class="card col-sm-6 col-md-6 col-xl-4">
-                        <div class="vignette">
-                            <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
-                                
-                                <div class='align-self-end'>
-                                    <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
-                            
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="card-body">
-                                
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
-                            </div>
-
-                            <div class="card-footer">
-                                        <button class="btn btn-order" type='button'>
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
-
-                            </div>
-                        </div>           
-                    </div>
-
-                    <div class="card col-sm-6 col-md-6 col-xl-4">
-                        <div class="vignette">
-                            <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
-                                
-                                <div class='align-self-end'>
-                                    <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
-                            
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="card-body">
-                                
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
-                            </div>
-
-                            <div class="card-footer">
-                                        <button class="btn btn-order" type='button'>
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
-
-                            </div>
-                        </div>           
-                    </div>
-
-                    <div class="card col-sm-6 col-md-6 col-xl-4">
-                        <div class="vignette">
-                            <div class="card-header">
-                                <img class="card-img funImg" src="images/m1.png" alt="..." srcset=""> 
-                                
-                                <div class='align-self-end'>
-                                    <span class='circle'>  0</span>
-                                    <span class="price"> 8.30€</span>
-                            
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="card-body">
-                                
-                                    <h1 class='ticket-title'>Menu Classic</h1>
-                                    <p class='ticket-text'>sandwich: burger, salade, tomate, cornichon + frites + boissson</p>
-                            </div>
-
-                            <div class="card-footer">
-                                        <button class="btn btn-order" type='button'>
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
-
-                            </div>
-                        </div>           
-                    </div>
                 </div>
 
             </div>
         </div>
 
 
-        <!-- FOURTH PAGE -->
+        <!-- FOURTH PAGE DESERTS-->
         <div class="tab-pane " id="panel4" role="tabpanel">
-            <h1>test</h1>
+            <div class="container-md ">
+                <div class="row  myOnglet">
+                   
+                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/d1.png" alt="Fondant au chocolat" srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 470 XPF</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Fondant au chocolat</h1>
+                                    <p class='ticket-text'>un fondant au chocolat avec un coulis de cacao couronnée d'une noisette de crème glacée à la vanille</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window iconToHide"></span>
+                                            <a>Commander</a>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/d2.png" alt="cake" srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 650 XPF</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>cake</h1>
+                                    <p class='ticket-text'>cake au chocolat ou au beurre</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window iconToHide"></span>
+                                            <a>Commander</a>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/d3.png" alt="donut chocolat vanille" srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 650 XPF</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>donut chocolat ou vanille</h1>
+                                    <p class='ticket-text'>donuts au chocolat ou à la vanille</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window iconToHide"></span>
+                                            <a>Commander</a>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/d4.png" alt="Smoothie" srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 800 XPF</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Smoothie</h1>
+                                    <p class='ticket-text'>parfunms: banane, chocolat ou fraise</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window iconToHide"></span>
+                                            <a>Commander</a>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/d5.png" alt="Dimanche" srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 550 XPF</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Dimanche</h1>
+                                    <p class='ticket-text'>parfum: fraise, chocolat, caramel</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window iconToHide"></span>
+                                            <a>Commander</a>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+               
+                 
+                </div>
+            </div>
         </div>
         
-        <!-- FIFTH PAGE -->
+        <!-- FIFTH PAGE BOISSONS-->
         <div class="tab-pane " id="panel5" role="tabpanel">
-            <h1 >Almost before we knew it, we had left the ground.</h1>
+            <div class="container-md ">
+                <div class="row  myOnglet">
+                   
+                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/bo1.png" alt="CocaCola" srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 400 XPF</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Coca Cola</h1>
+                                    <p class='ticket-text'>une boisson désaltérante</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window iconToHide"></span>
+                                            <a>Commander</a>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/bo2.png" alt="Coca Cola Light" srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 400 XPF</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Coca Cola Light</h1>
+                                    <p class='ticket-text'>Alliez plaisir et santé</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window iconToHide"></span>
+                                            <a>Commander</a>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/bo3.png" alt="Coca Cola Zero" srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 400 XPF</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Burger Big</h1>
+                                    <p class='ticket-text'>Le plein d'énergie sans les calories</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window iconToHide"></span>
+                                            <a>Commander</a>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/bo4.png" alt="Fanta Orange" srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 400 XPF</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Fanta Orange</h1>
+                                    <p class='ticket-text'>Une boisson fraîche et pulpeuse</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window iconToHide"></span>
+                                            <a>Commander</a>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/bo5.png" alt="Sprite" srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 400 XPF</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Sprite</h1>
+                                    <p class='ticket-text'>Savourez le meilleur des agrumes</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window iconToHide"></span>
+                                            <a>Commander</a>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <div class="card col-sm-6 col-md-6 col-xl-4">
+                        <div class="vignette">
+                            <div class="card-header">
+                                <img class="card-img funImg" src="images/bo6.png" alt="Nestea" srcset=""> 
+                                
+                                <div class='align-self-end'>
+                                    <span class='circle'>  0</span>
+                                    <span class="price"> 400 XPF</span>
+                            
+                                </div>
+                        
+                            </div>
+                        
+                            <div class="card-body">
+                                
+                                    <h1 class='ticket-title'>Nestea</h1>
+                                    <p class='ticket-text'>Un thé bien frais pour rester dynamique</p>
+                            </div>
+
+                            <div class="card-footer">
+                                        <button class="btn btn-order" type='button'>
+                                            <span class="bi bi-shop-window iconToHide"></span>
+                                            <a>Commander</a>
+                                        </button>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                 
+                </div>
+            </div>
         </div>
 
 
+  <!-- SIXTH PAGE ACCOMPAGNEMENT-->
+  <div class="tab-pane " id="panel6" role="tabpanel">
+    <div class="container-md ">
+        <div class="row  myOnglet">
+           
+            <div class="card col-sm-6 col-md-6 col-xl-4">
+                <div class="vignette">
+                    <div class="card-header">
+                        <img class="card-img funImg" src="images/s1.png" alt="Frites" srcset=""> 
+                        
+                        <div class='align-self-end'>
+                            <span class='circle'>  0</span>
+                            <span class="price"> 250 XPF</span>
+                    
+                        </div>
+                
+                    </div>
+                
+                    <div class="card-body">
+                        
+                            <h1 class='ticket-title'>Frites</h1>
+                            <p class='ticket-text'>Paquet de frites bien chaudes</p>
+                    </div>
 
+                    <div class="card-footer">
+                                <button class="btn btn-order" type='button'>
+                                    <span class="bi bi-shop-window iconToHide"></span>
+                                    <a>Commander</a>
+                                </button>
+
+                    </div>
+                </div>           
+            </div>
+
+            <div class="card col-sm-6 col-md-6 col-xl-4">
+                <div class="vignette">
+                    <div class="card-header">
+                        <img class="card-img funImg" src="images/s2.png" alt="onions rings" srcset=""> 
+                        
+                        <div class='align-self-end'>
+                            <span class='circle'>  0</span>
+                            <span class="price"> 450 XPF</span>
+                    
+                        </div>
+                
+                    </div>
+                
+                    <div class="card-body">
+                        
+                            <h1 class='ticket-title'>onions rings</h1>
+                            <p class='ticket-text'>oignons frîts</p>
+                    </div>
+
+                    <div class="card-footer">
+                                <button class="btn btn-order" type='button'>
+                                    <span class="bi bi-shop-window iconToHide"></span>
+                                    <a>Commander</a>
+                                </button>
+
+                    </div>
+                </div>           
+            </div>
+
+            <div class="card col-sm-6 col-md-6 col-xl-4">
+                <div class="vignette">
+                    <div class="card-header">
+                        <img class="card-img funImg" src="images/s3.png" alt="Nuggets" srcset=""> 
+                        
+                        <div class='align-self-end'>
+                            <span class='circle'>  0</span>
+                            <span class="price"> 650 XPF</span>
+                    
+                        </div>
+                
+                    </div>
+                
+                    <div class="card-body">
+                        
+                            <h1 class='ticket-title'>Nuggets</h1>
+                            <p class='ticket-text'>une boîte de 10 nuggets au poulet</p>
+                    </div>
+
+                    <div class="card-footer">
+                                <button class="btn btn-order" type='button'>
+                                    <span class="bi bi-shop-window iconToHide"></span>
+                                    <a>Commander</a>
+                                </button>
+
+                    </div>
+                </div>           
+            </div>
+
+            <div class="card col-sm-6 col-md-6 col-xl-4">
+                <div class="vignette">
+                    <div class="card-header">
+                        <img class="card-img funImg" src="images/s4.png" alt="chesse rings" srcset=""> 
+                        
+                        <div class='align-self-end'>
+                            <span class='circle'>  0</span>
+                            <span class="price"> 900 XPF</span>
+                    
+                        </div>
+                
+                    </div>
+                
+                    <div class="card-body">
+                        
+                            <h1 class='ticket-title'>Chesse rings</h1>
+                            <p class='ticket-text'>du fromage frît</p>
+                    </div>
+
+                    <div class="card-footer">
+                                <button class="btn btn-order" type='button'>
+                                    <span class="bi bi-shop-window iconToHide"></span>
+                                    <a>Commander</a>
+                                </button>
+
+                    </div>
+                </div>           
+            </div>
+
+            <div class="card col-sm-6 col-md-6 col-xl-4">
+                <div class="vignette">
+                    <div class="card-header">
+                        <img class="card-img funImg" src="images/s5.png" alt="chicken wings" srcset=""> 
+                        
+                        <div class='align-self-end'>
+                            <span class='circle'>  0</span>
+                            <span class="price"> 850 XPF</span>
+                    
+                        </div>
+                
+                    </div>
+                
+                    <div class="card-body">
+                        
+                            <h1 class='ticket-title'>chicken wings</h1>
+                            <p class='ticket-text'>une boîte 15 ailes de poulets dorées au barbecue</p>
+                    </div>
+
+                    <div class="card-footer">
+                                <button class="btn btn-order" type='button'>
+                                    <span class="bi bi-shop-window iconToHide"></span>
+                                    <a>Commander</a>
+                                </button>
+
+                    </div>
+                </div>           
+            </div>
+
+            
+
+         
+        </div>
+    </div>
+</div>
 
 
 
@@ -1017,14 +1221,14 @@
 
             $(this).click(function(){
                 $(this).parent(".card-footer").parent(".vignette").css({
-                    "background":"linear-gradient(24deg, #f5cb12 0%, #d512ee 25%, #f16026 50%,#d512ee 75%,#f5cb12 100%)",
+                    "background":"linear-gradient(0deg, #757059 0%, #fff 50%,#757059 100%)",
                     "background-size":"600% 600%",
-                    "animation": "AnimeGradient 2s ease 2",
+                    "animation": "AnimeGradient 2s ease 10",
                 });
                 $(this).parent(".card-footer").parent(".vignette").children(".card-header").children("img").css({
                     "background":"linear-gradient(20deg, #f16026 0%,   #fff 25% ,#f5cb12 50%, #fff 75%, #f16026 100%)",
                     "background-size":"600% 600%",
-                    "animation": "AnimeGradient 2s ease 2",
+                    "animation": "AnimeGradient 2s ease 1",
                 });
             })
 

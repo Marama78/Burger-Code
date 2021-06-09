@@ -240,8 +240,8 @@ header span{
     text-shadow: 1px 1px 1px #000;
     margin:2px 5px;
     font-size: 1.2em;
-    width:100px;
-    padding: 5px 5px 5px 15px ;
+    width:auto;
+    padding: 0.1em 0.5em 0.1em 0.5em;
     z-index:2;
    
 }
@@ -307,25 +307,25 @@ AND
     .reduceSize{
         font-size: 0.5em;
     }
-    .card-footer{
+   /* .card-footer{
         max-height: fit-content;
         padding:0px 0px;
-    }
+    }*/
 
    
-    .card-body{
+   /* .card-body{
     margin:0px 0px;
     padding:0px 0px;
-    }
-    .card-header{
+    }*/
+    /*.card-header{
         padding:0px 0px;
-    }
-    .car{
+    }*/
+   /* .car{
         height:30% !important;
-    }
-    .text-center{
+    }*/
+   /* .text-center{
     height: 0px;
-    }   
+    }   */
     #Title{
         visibility: hidden;
     }
