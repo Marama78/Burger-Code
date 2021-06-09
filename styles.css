@@ -17,9 +17,8 @@
 
 body{
     background-image: url('images/bg.png');
-    font-weight: bold;
     font-size: 1.5em;
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Holtwood One SC', sans-serif;
     margin:0px 0px;
     padding: 0px 0px;
 }
@@ -28,11 +27,6 @@ h1{
     color:#fff;
 }
 
-/*.row{
-    /*margin: auto;*/
-  /*  width: 100%;*/
-/*}*/
-
 #menuBurger{
     float:left;
     width:940px;
@@ -40,17 +34,17 @@ h1{
 
 /*HEADER et MENU*/
 
-#Title{
+#headerLogo{
    height: 1em;
     width:auto;
-    color:#f16026  !important;
-    text-shadow: 2px 2px 2px #f5cb12;
+    color:#e7480f  !important;
+    text-shadow: 2px 2px 2px #ffd301;
     text-transform: uppercase;
 }
 
 header span{
     padding: 2px 2px;
-    color:#f5cb12;
+    color:#ffd301;
     text-shadow: none;
 
 }
@@ -96,13 +90,13 @@ header span{
 }
 
 .nav-item .active{
-    color: #f16026 !important;
+    color: #e7480f !important;
     background: #fff !important;
 }
 
 
 .nav-link:hover{
-    background: #f16026 !important;
+    background: #e7480f !important;
     color:#fff !important;
 }
 
@@ -132,7 +126,7 @@ header span{
 #menuSpy{
     visibility: hidden;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px #f16026 !important;
+    text-shadow: 1px 1px 1px #e7480f !important;
     color:#fff !important;
     padding-top:4px;
 }
@@ -145,14 +139,6 @@ header span{
     padding:0px 0px;
 }
 
-.card{
-    background: rgba(0,0,0,0);
-    margin: 0px 0px ;
-    
-    padding:10px 10px;
-    z-index:1;
-}
-
 .vignette{ 
     display:block;
     list-style: none;
@@ -161,8 +147,14 @@ header span{
     margin:10px 10px;
     padding:0px 0px 3em 0px;
     height:100%;
+}
 
-    /*animation: AnimationName 9s ease infinite;*/
+.card{
+    background: rgba(0,0,0,0);
+    margin: 0px 0px ;
+    
+    padding:10px 10px;
+    z-index:1;
 }
 
 .card-header, .card-footer{
@@ -170,13 +162,11 @@ header span{
     border:none;
 }
 
-
 .card .funImg{
     padding:0px 0px;
-    background: #f5cb12;
+    background: #ffd301;
     margin:10px 0px 0px 0px;
     z-index:1;
-
 }
 
 .card-footer{
@@ -191,34 +181,37 @@ header span{
 .btn-order{
     border:none;
     width: 100%;
-    background: #f16026;
+    background: #e7480f;
     color:#fff;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 3px 3px 3px #333;
     margin: 8px 0px;
-    font-size: 1.3em;
+    font-size: 0.8em;
     border-radius: 9px;
 }
 
 .btn-order:hover{
     background: #fff;
-    color:#f16026;
+    color:#e7480f;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px #000;
-    border: 2px solid #f16026;
+    border: 2px solid #e7480f;
     margin: 4px 4px;
 
 }
 
 .ticket-title{
-    color:#f16026;
+    height: 50px;
+    display: inline;
+    color:#e7480f;
     text-transform: uppercase;
-    width: auto;
-  /*  font-size:1.5em;*/
-    font-weight: bold;
+    text-justify:auto;
+
+   font-size: 1.2em;
+    font-size-adjust: 0.5;
     margin:15px 8px 15px 8px;
     z-index:1;
-    text-shadow: 1px 1px 1px  rgb(80, 77, 77);
+    text-shadow: 2px 2px 2px #333;
 }
 
 .ticket-text{
@@ -228,6 +221,8 @@ header span{
     color:#000;
     margin:0.5em 0em;
     z-index:1;
+    font-size-adjust: 1.2em;
+   font-size: 0.8em;
 
 }
 
@@ -260,7 +255,7 @@ header span{
     z-index:-1;
 }
 
-
+/* Pied de page*/
 
 
 
@@ -271,13 +266,26 @@ header span{
         margin:0px 0px;
         padding:0px 0px;
         z-index:1;
-        font-size: small;
+    }
+
+    .btn-order{
+        font-size: 0.8em;
+        font-weight: lighter;
+    }
+    .ticket-title{
+        font-size:larger;
+        
+    }
+    .ticket-text{
+        padding-bottom: 1.8em;
+        margin: auto;
     }
 
     .text-center{
         height: 0px;
-        }
-    #Title{
+    }
+
+    #headerLogo{
         visibility: hidden;
     }
 
@@ -294,44 +302,33 @@ header span{
 @media 
 (min-width: 576px)
 AND
-(max-width:768px){
+(max-width:1096px){
     .col-sm-6 {
         background: rgba(0,0,0,0);
         margin:0px 0px;
         padding:0px 0px;
         z-index:1;
-        font-size: small;
+        font-size: x-large;
     }
-
 
     .reduceSize{
         font-size: 0.5em;
     }
-   /* .card-footer{
-        max-height: fit-content;
-        padding:0px 0px;
-    }*/
 
-   
-   /* .card-body{
-    margin:0px 0px;
-    padding:0px 0px;
-    }*/
-    /*.card-header{
-        padding:0px 0px;
-    }*/
-   /* .car{
-        height:30% !important;
-    }*/
-   /* .text-center{
-    height: 0px;
-    }   */
-    #Title{
+    .btn-order{
+        font-size: 0.8em;
+        font-weight: lighter;
+    }
+    .ticket-title{
+        font-size:x-large;
+    }
+    .ticket-text{
+        padding-bottom: 1.8em;
+    }
+
+    #headerLogo{
         visibility: hidden;
     }
-    /*.nav-link{
-        font-size:medium;
-    }*/
    
     #menuSpy{
         visibility:visible;
