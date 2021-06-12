@@ -1,0 +1,500 @@
+/*GENERAL*/
+
+*{
+    margin:0px 0px;
+    padding: 0px 0px;
+}
+
+.container-lg{
+    margin:0px 0px;
+    padding: 0px 0px;
+}
+
+#planche{
+    background-image: url('../images/bg.png');
+    margin:0px 0px;
+    padding: 0px 0px;
+}
+
+body{
+    font-size: 1.5em;
+    font-family: 'Holtwood One SC', sans-serif;
+    margin:0px 0px;
+    padding: 0px 0px;
+}
+
+h1{
+    color:#fff;
+}
+
+#menuBurger{
+    float:left;
+    width:940px;
+}
+
+#couverture{
+    background-image: url('../images/bg.png');
+}
+
+/*HEADER et MENU*/
+
+#headerLogo{
+    font-family: 'Holtwood One SC', sans-serif;
+   height: 1em;
+    width:auto;
+    color:#e7480f  !important;
+    text-shadow: 2px 2px 2px #ffd301;
+    text-transform: uppercase;
+}
+
+header span{
+    padding: 2px 2px;
+    color:#ffd301;
+    text-shadow: none;
+
+}
+
+
+
+header span{
+    margin:10px 10px;
+}
+
+.nav{
+    border:none;
+}
+
+/*#boutonColapse .nav .navbar-nav .nav-item .nav-link{*/
+.nav-link{
+    float:left;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border: none;
+    color: #fff;
+    padding:5px 20px;
+    border-radius: 8px;
+
+}
+
+.nav-item{
+    float:left;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
+    
+.nav-item:hover{
+    background: #fff;
+    border-radius: 3px;
+}
+
+.nav-item .active{
+    color: #e7480f !important;
+    background: #fff !important;
+}
+
+
+.nav-link:hover{
+    background: #e7480f !important;
+    color:#fff !important;
+}
+
+  
+        
+
+#planche, .navbar{
+    background-image: url('../images/bg.png');
+    position: sticky;
+    top:0em;
+    z-index: 100;
+    width: 100%;
+  /*  background:rgb(36, 28, 28);
+    padding-bottom: 1.5em;*/
+}
+
+.show{
+    color: #fff !important;
+
+}
+
+
+
+
+
+
+#menuSpy{
+    visibility: hidden;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #e7480f !important;
+    color:#fff !important;
+    padding-top:4px;
+}
+
+
+
+/* les cartes */
+.tab{
+    margin:0px 0px;
+    padding:0px 0px;
+}
+
+.card .vignette{ 
+    display:block;
+    list-style: none;
+    background: #fff;
+    border-radius: 3px;
+    margin:10px 10px;
+    padding:0px 0px 3em 0px;
+    height:100%;
+}
+
+.card{
+    background: rgba(0,0,0,0);
+    margin: 0px 0px ;
+    
+    padding:10px 10px;
+    z-index:1;
+}
+
+.card-header, .card-footer{
+    background: rgba(0,0,0,0);
+    border:none;
+}
+
+.card .funImg{
+    padding:0px 0px;
+    background: #ffd301;
+    margin:10px 0px 0px 0px;
+    z-index:1;
+}
+
+.card-footer{
+    position:absolute;
+    bottom: 1.2em;
+    margin:2px 2px;
+    padding:10px 10px;
+    text-align: center;
+    width: 90%;
+}
+
+.btn-order{
+    border:none;
+    width: 100%;
+    background: #e7480f;
+    color:#fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px #333;
+    margin: 8px 0px;
+    font-size: 0.8em;
+    border-radius: 9px;
+}
+
+.btn-order:hover{
+    background: #fff;
+    color:#e7480f;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    border: 2px solid #e7480f;
+    margin: 4px 4px;
+
+}
+
+.ticket-title{
+    height: 50px;
+    display: inline;
+    color:#e7480f;
+    text-transform: uppercase;
+    text-justify:auto;
+
+   font-size: 1.2em;
+    font-size-adjust: 0.5;
+    margin:15px 8px 15px 8px;
+    z-index:1;
+    text-shadow: 2px 2px 2px #333;
+}
+
+.ticket-text{
+  /*  visibility: hidden;*/
+    position: relative;
+    text-transform: uppercase;
+    color:#000;
+    margin:0.5em 0em;
+    z-index:1;
+    font-size-adjust: 1.2em;
+   font-size: 0.8em;
+
+}
+
+.price{ 
+    position:absolute;
+    top:30px;
+    right: -5px;
+    background:#2ebe93;
+    color:#fff;
+    text-shadow: 1px 1px 1px #000;
+    margin:2px 5px;
+    font-size: 1.2em;
+    width:auto;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    z-index:2;
+   
+}
+
+.circle{
+    border-radius: 8px;
+    background: #20745a;
+    color: #2ebe93;
+    position: absolute;
+    top:20px;
+    right: -5px;
+    margin:2px 5px;
+    font-size: 24px;
+    width:100px;
+    padding: 5px 5px 5px 15px ;
+    z-index:-1;
+}
+
+/* Pied de page*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Admin*/
+
+.admin{
+    background:#fff;
+    border-radius:10px;
+    padding:50px;
+    font-size: small;
+    color: #000;
+    
+}
+
+.dataPowerBase #headerLogo{
+    margin: 50px 0px;
+}
+
+.admin h1{
+    border-color: rgba(0,0,0,0);
+    color: #000 ! important;
+    font-size: x-large;
+}
+
+#dataBasePower{
+    background-image: url('../images/bg.png');
+    font-size:small;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0px 0px;
+    padding: 0px 0px;
+    display: block;
+}
+
+.admin .btnView, .btnUpdate, .btnDelete{
+    box-shadow: 2px 2px 2px #333;
+    border: 1px solid;
+}
+
+
+/*Viewer*/
+.viewer{
+    font-family: 'Holtwood One SC', sans-serif;
+    border:none
+}
+
+.viewer .vignette{
+    display:block;
+    list-style: none;
+    background: #fff;
+    margin:0px 0px;
+    padding:0px 0px 3em 0px;
+    height:100%;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+
+.viewer .vignette{
+    padding:0px;
+    margin: 0px;
+}
+
+.viewer .card-body{
+    color: #ffd301;
+    display:block;
+}
+
+.viewer .card-footer{
+    color: #ffd301;
+    position: relative;
+}
+
+.viewer .ticket-text{
+    color:#000;
+}
+
+.viewer .ticket-title{
+    color:#e7480f!important;
+}
+
+.viewer .price{
+    position:absolute;
+    top:30px;
+    right: -5px;
+    background:#2ebe93;
+    color:#fff;
+    text-shadow: 1px 1px 1px #000;
+    margin:2px 5px;
+    font-size: 2em;
+    width:auto;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+    z-index:2;
+   
+}
+
+/* INSERT */
+.help-inline{
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media 
+(max-width:576px){
+    .col-sm-4 {
+        background: rgba(0,0,0,0);
+        margin:0px 0px;
+        padding:0px 0px;
+        z-index:1;
+    }
+
+    .btn-order{
+        font-size: 0.8em;
+        font-weight: lighter;
+    }
+    .ticket-title{
+        font-size:larger;
+        
+    }
+    .ticket-text{
+        padding-bottom: 1.8em;
+        margin: auto;
+    }
+
+    .text-center{
+        height: 0px;
+    }
+
+    #headerLogo{
+        visibility: hidden;
+    }
+
+    #menuSpy{
+        visibility:visible;
+    }
+
+    .nav-link{
+        width: 100%;
+    }
+}
+
+/* how to handle only the col-sm-4 */
+@media 
+(min-width: 576px)
+AND
+(max-width:1096px){
+    .col-sm-6 {
+        background: rgba(0,0,0,0);
+        margin:0px 0px;
+        padding:0px 0px;
+        z-index:1;
+        font-size: x-large;
+    }
+
+    .reduceSize{
+        font-size: 0.5em;
+    }
+
+    .btn-order{
+        font-size: 0.8em;
+        font-weight: lighter;
+    }
+    .ticket-title{
+        font-size:x-large;
+    }
+    .ticket-text{
+        padding-bottom: 1.8em;
+    }
+
+    #headerLogo{
+        visibility: hidden;
+    }
+   
+    #menuSpy{
+        visibility:visible;
+    }
+    .nav-link{
+        width: 100%;
+    }
+}
+
+
+@keyframes AnimeGradient {
+    0%{background-position: 0% 50%}
+    25%{background-position:50% 100%}
+    50%{background-position:100% 50%}
+    75%{background-position:50% 0%}
+}
+
