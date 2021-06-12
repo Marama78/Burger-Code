@@ -194,8 +194,9 @@
                     
                     <div class="form-group">
                         <br>
-                    <br>
-                    <br><button type="submit" class="btn btn-success" ><span class="bi bi-pen"> </span> Ajouter </button>
+                        <br>
+                        <br>
+                        <button type="submit" class="btn btn-success" ><span class="bi bi-pen"> </span> Ajouter </button>
                         <a href="index.php" class="btn btn-primary"><span class="bi bi-backspace"> </span> Retour </a>
                         </div>
 
@@ -204,5 +205,15 @@
 
             </div>
         </div>
+
+
+        <footer class="footPage text-center">
+            <br>
+            copyright 2021 - anahoa studio
+            <br>
+        </footer>
+
+
+
     </body>
 </html>

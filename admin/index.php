@@ -47,6 +47,10 @@
                             <span class="bi bi-plus-circle"></span>
                             Ajouter
                         </a>
+                        <a href="../index.php" class="btn btn-warning">
+                            <span class="bi bi-plus-circle"></span>
+                            Accéder au Site Web
+                        </a>
                     </h1>
 
                     <table class="table table-striped table-bordered bg-light">
@@ -114,7 +118,21 @@
                 </div>
 
             </div>
-        </div>
+       
+
+
+
+                            
+        <footer class="footPage text-center">
+        <br>
+
+        copyright 2021 - anahoa studio
+        <br>
+
+        </footer>
+
+    </div>
+
     </body>
 
 </html>

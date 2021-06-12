@@ -2,7 +2,7 @@
 
     require "database.php";
 
-    if($empty($_GET['id'])){
+    if(!empty($_GET['id'])){
         $id = checkInput($_GET['id']);
     }
 
@@ -50,19 +50,21 @@
         else
         {
             $isImageUpdated = true;
-
             $isUploadSuccess=true;
             
+            // vérifie l'extension du fichier image
             if($imageExtension != "jpg" && $imageExtension !="png" && $imageExtension!="jpeg" && $imageExtension!="gif")
             {
                 $imageError = "les fichiers autorisés dont : .jpg .png .jpeg et .gif";
                 $isUploadSuccess = false;
             }
+            // vérifie si le fichier existe déjà dans le dossier image
             if(file_exists($imagePath))
             {
                 $imageError = "Le fichier existe déja";
                 $isUploadSuccess = false;
             }
+            // vérifie que le fichier soit de taille inférieure à 500ko
             if($_FILES["image"]["size"] > 500000) // 500ko
             {
                 $imageError = "le fichier ne doit pas dépasser 500 ko";
@@ -78,19 +80,58 @@
             }
         } // end else
 
-        if($isSuccess && $isUploadSuccess)
+        if(($isSuccess && $isUploadSuccess && $isUploadSuccess)||($isSuccess && !$isImageUpdated))
         {
             $db = Database::connect();
-            $statement = $db->prepare("INSERT INTO items (name,description,price,category,image) VALUES ( ? , ? , ? , ? , ? )");
-            $statement->execute(array($name,$description,$price,$category,$image));
+            
+            if($isImageUpdated)
+            {
+                $statement = $db->prepare("UPDATE items set name = ?, description = ? , price = ? , category = ? , image = ? WHERE id=?");
+                $statement->execute(array($name,$description,$price,$category,$image,$id));
+            }
+            else
+            {
+                $statement = $db->prepare("UPDATE items set name = ?, description = ? , price = ? , category = ?  WHERE id=?");
+                $statement->execute(array($name,$description,$price,$category,$id));
+            }
+           
             Database::disconnect();
+
             header("Location: index.php");
-
-
         }
+        else if ($isImageUpdated && !$isUploadSuccess)
+        {
+            // empêcher de mettre à jour les données images si l'upload des images s'est mal passé
+
+            $db = Database::connect();
+
+            $statement = $db->prepare("SELECT image FROM items WHERE id = ?");
+            $statement->execute(array($id));
+            $item = $statement->fetch();
+            $image = $item['image'];
+
+            Database::disconnect();
+        }
+      
+    }
+    else
+    {
+        $db = Database::connect();
+
+        $statement = $db->prepare("SELECT * FROM items WHERE id = ?");
+        $statement->execute(array($id));
+        $item = $statement->fetch();
+
+        $name = $item['name'];
+        $description = $item['description'];
+        $price = $item['price'];
+        $category = $item['category'];
+        $image = $item['image'];
+
+        
+        Database::disconnect();
 
     }
-
 
     function checkInput($data){
         $data= trim($data);
@@ -140,6 +181,43 @@
     
         <div class="container admin">
             <div class="row">
+
+            <?php
+                   echo ' <div class="col-sm-4">
+                        <div class="card viewer">
+                            <div class="vignette ">
+                                <div class="card-header">
+                                    
+                                    <img class="card-img funImg" src="../images/' . $item['image'] . '" alt="Menu Classic" srcset=""> 
+                                    
+                                    <div class="align-self-end">
+                                        <span class="circle">  0</span>
+                                        <span class="price"> ' . number_format((float)$item['price'],2,'.',' ') . '€</span>
+                                
+                                    </div>
+                            
+                                </div>
+                            
+                                <div class="card-body">
+                                    
+                                        <h1 class="ticket-title">' . $item['name'] . '</h1>
+                                        <p class="ticket-text">' . $item['description'] . '</p>
+                                </div>
+
+                                <div class="card-footer">
+                                            <button class="btn btn-order" type="button">
+                                                <span class="bi bi-shop-window iconToHide"></span>
+                                                <a>Commander</a>
+                                            </button>
+
+                                </div>
+                            </div>  
+                        </div>
+
+                    </div>';
+                    ?>
+
+                    
                     <div class="col-sm-6">
                             <h1>
                             <strong>Modifier un item</strong>
@@ -193,6 +271,8 @@
                             </div>
 
                             <div class="form-group">
+                                <label>Image :</image>
+                                <p><?php echo $image; ?></p>
                                 <label for="image"><strong>Image: </strong> </label>
                                 <br>
                                 <input type="file" id="image" name = "image"></input>
@@ -207,49 +287,32 @@
                             
                             <div class="form-group">
                                 <br>
-                            <br>
-                            <br><button type="submit" class="btn btn-success" ><span class="bi bi-pen"> </span> Ajouter </button>
+                                <br>
+                                <br>
+                                <button type="submit" class="btn btn-success" ><span class="bi bi-pen"> </span> Modifier </button>
                                 <a href="index.php" class="btn btn-primary"><span class="bi bi-backspace"> </span> Retour </a>
                                 </div>
 
                         </form>
-                    <?php
-                    echo '
-                    <div class="col-sm-6">
-                        <div class="card viewer">
-                            <div class="vignette ">
-                                <div class="card-header">
-                                    
-                                    <img class="card-img funImg" src="../images/' . $item['image'] . '" alt="Menu Classic" srcset=""> 
-                                    
-                                    <div class="align-self-end">
-                                        <span class="circle">  0</span>
-                                        <span class="price"> ' . number_format((float)$item['price'],2,'.',' ') . '€</span>
-                                
-                                    </div>
-                            
-                                </div>
-                            
-                                <div class="card-body">
-                                    
-                                        <h1 class="ticket-title">' . $item['name'] . '</h1>
-                                        <p class="ticket-text">' . $item['description'] . '</p>
-                                </div>
-
-                                <div class="card-footer">
-                                            <button class="btn btn-order" type="button">
-                                                <span class="bi bi-shop-window iconToHide"></span>
-                                                <a>Commander</a>
-                                            </button>
-
-                                </div>
-                            </div>  
-                        </div>
-
-                    </div>';
-                    ?>
+                    
+                    </div>
+                    
+                
                 </div>
             </div>
+        
+        <footer class="footPage text-center">
+            <br>
+            copyright 2021 - anahoa studio
+            <br>
+        </footer>
+
+        
+        
         </div>
+
+
+        
+
     </body>
 </html>

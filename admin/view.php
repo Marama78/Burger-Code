@@ -65,7 +65,7 @@
     </head>
 
     <body>
-        <div id="dataBasePower" style="height: 1000px">
+        <div id="dataBasePower">
             <header class="text-center">
                 <br>
                 <br>
@@ -82,6 +82,42 @@
     
         <div class="container admin">
             <div class="row">
+            <?php   echo '<div class="col-sm-4">
+                    <div class="card viewer">
+                        <div class="vignette ">
+                            
+                                <div class="card-header">
+                                                
+                                                <img class="card-img funImg" src="../images/' . $item['image'] . '" alt="Menu Classic" srcset=""> 
+                                                
+                                            <div class="align-self-end">
+                                                    <span class="circle">  0</span>
+                                                    <span class="price"> ' . number_format((float)$item['price'],2,'.',' ') . '€</span>
+                                            
+                                                </div>
+                                        
+                                            </div>
+                                        
+                                            <div class="card-body">
+                                                
+                                                    <h1 class="ticket-title">' . $item['name'] . '</h1>
+                                                    <p class="ticket-text">' . $item['description'] . '</p>
+                                            </div>
+
+                                            <div class="card-footer">
+                                                        <button class="btn btn-order" type="button">
+                                                            <span class="bi bi-shop-window iconToHide"></span>
+                                                            <a>Commander</a>
+                                                        </button>
+
+                                            </div>
+                         
+                        </div>  
+                    </div>
+
+                </div>';   ?> 
+
+
                 <div class="col-sm-6">
                     <h1><strong>Voir un item</strong></h1>
                     <br>
@@ -130,49 +166,18 @@
                         <a href="index.php" class="btn btn-primary"><span class="bi bi-backspace"> </span> Retour </a>
                     </div>
                 </div>
-                
-                <?php
-                echo '<div class="col-sm-6">
-                    <div class="card viewer">
-                        <div class="vignette ">
-                            
-                           
-                            
-                            <div class="card-header">
-                                
-                                <img class="card-img funImg" src="../images/' . $item['image'] . '" alt="Menu Classic" srcset=""> 
-                                
-                               <div class="align-self-end">
-                                    <span class="circle">  0</span>
-                                    <span class="price"> ' . number_format((float)$item['price'],2,'.',' ') . '€</span>
-                            
-                                </div>
-                        
-                            </div>
-                        
-                            <div class="card-body">
-                                
-                                    <h1 class="ticket-title">' . $item['name'] . '</h1>
-                                    <p class="ticket-text">' . $item['description'] . '</p>
-                            </div>
-
-                            <div class="card-footer">
-                                        <button class="btn btn-order" type="button">
-                                            <span class="bi bi-shop-window iconToHide"></span>
-                                            <a>Commander</a>
-                                        </button>
-
-                            </div>
-                        </div>  
-                    </div>
-
-                </div>';
-                ?>
+               
+           
             </div>
         </div>    
     
     
-    
+        <footer class="footPage h-50 text-center">
+        <br>
+        copyright 2021 - anahoa studio
+        <br>
+
+    </footer>
     
     
     </body>

@@ -1,5 +1,38 @@
 <?php
 
+require "database.php";
+
+// vérifier que la page a capturé une donnée 'id'
+if(!empty($_GET['id']))
+{
+    // si vrai, traiter et nettoyer la valeur pour casser le hacking
+    $id = checkInput($_GET['id']);
+ 
+}
+
+
+if(!empty($_POST))
+{
+    $id = checkInput($_POST['id']);
+    $db = Database::connect();
+    $statement = $db->prepare("DELETE FROM items WHERE id = ?");
+    $statement->execute(array($id));
+    Database::disconnect();
+
+
+    //retourner vers la page index.php
+    header("Location: index.php");
+
+}
+
+function checkInput($data){
+    $data= trim($data);
+    $data= stripslashes($data);
+    $data= htmlspecialchars($data);
+    //$data= htmlentities($data);
+
+    return $data;
+}
 
 
 ?>
@@ -25,7 +58,7 @@
     </head>
 
     <body>
-        <div id="dataBasePower" style="height: 1000px">
+        <div id="dataBasePower" style = "height:100vh;">
             <header class="text-center">
                 <br>
                 <br>
@@ -42,7 +75,39 @@
     
         <div class="container admin">
             <div class="row">
+                <h1>
+                    <strong>Supprimer un item</strong>
+                </h1>
+                
+                <br>
+                
+                
+                <form class="form" role="form" action="delete.php" method="post">
+                    <input type = "hidden" name="id" value="<?php echo $id; ?>" />;
+                 
+
+                    <p class='alert alert-warning'>Etes vous sûr de vouloir supprimer? </p>
+
+                    <div class="form-group">
+                        <br>
+                        <button type="submit" class="btn btn-warning btnValidate" >Oui</button>
+                        <a href="index.php" class="btn btn-default btnCancel">Non</a>
+                    </div>
+
+                </form>
+            
             </div>
+
+
+            
+
+
+
         </div>
+        <footer class="footPage text-center footPageDelete">
+            <br>
+            copyright 2021 - anahoa studio
+            <br>
+        </footer>
     </body>
 </html>
